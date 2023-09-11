@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/aboutStyles.css'
+import '../../styles/aboutStyles.css';
 
 const styles = {
   headerStyle: {
@@ -13,7 +13,7 @@ const styles = {
 export default function About() {
   return (
     <div style={styles.headerStyle} className="about-container">
-        <h1 style={styles.headingStyle} className="about-title">About Page</h1>
+        <h2 style={styles.headingStyle} className="about-title">About Page</h2>
         <p>
           Text here
         </p>
