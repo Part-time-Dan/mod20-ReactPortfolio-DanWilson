@@ -1,0 +1,32 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.6) 20%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 90%);
+    backdrop-filter: blur(60px);
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 100px;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .page-container {
+      height: 80vh;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .page-container {
+      height: 70vh;
+    }
+  }

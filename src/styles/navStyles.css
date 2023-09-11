@@ -1,8 +1,29 @@
 .nav-list {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    list-style: none;
+  justify-content: center;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  background-color: transparent;
+  margin-right: 10px;
+  transition: background-color 0.5s;
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
 }
 
 /* test style */

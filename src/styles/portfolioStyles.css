@@ -1,19 +1,4 @@
-.portfolio-container {
-  background: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0) 100%);
-  backdrop-filter: blur(40px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+.portfolio-content {
+  margin-top: 20px; 
 }
 
-.portfolio-title {
-  font-size: 24px;
-  color: #333;
-}
-
-  /* test style */
