@@ -4,7 +4,7 @@ import '../styles/navStyles.css';
 function Navigation({ currentPage, handlePageChange }) {
 
   return (
-    <div className="flex-container">
+
       <div className="nav-container">
         <ul className="nav-list">
 
@@ -50,7 +50,7 @@ function Navigation({ currentPage, handlePageChange }) {
 
         </ul>
       </div>
-    </div>
+
   );
 }
 

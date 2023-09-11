@@ -1,13 +1,7 @@
-.flex-container {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-container {
-    flex-direction: row;
-}
-
 .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
     list-style: none;
 }
 
