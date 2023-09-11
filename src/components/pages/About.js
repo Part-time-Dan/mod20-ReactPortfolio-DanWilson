@@ -1,17 +1,12 @@
 import React from 'react';
 import '../../styles/aboutStyles.css';
-
-const styles = {
-  headingStyle: {
-    fontSize: '100px',
-  },
-};
+import '../../styles/pageStyles.css'
 
 export default function About() {
   return (
-    <div className="about-container">
-        <h2 style={styles.headingStyle} className="about-title">About Page</h2>
-        <p>
+    <div className='page-container'>
+        <h2 className='page-title'>About Me</h2>
+        <p className='about-content'>
           Text here
         </p>
     </div>
