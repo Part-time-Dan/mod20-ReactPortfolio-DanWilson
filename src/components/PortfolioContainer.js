@@ -6,6 +6,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Header from './Header';
 import Footer from './Footer';
+import '../styles/gradientStyles.css';
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('About');
@@ -26,7 +27,7 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className='App'>
+        <div className='App animated-background'>
 
             <Header />
 
