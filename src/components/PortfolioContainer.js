@@ -12,16 +12,18 @@ export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
-        if (currentPage === 'About') {
-            return <About />;
+        switch (currentPage) {
+            case 'About':
+                return <About setCurrentPage={setCurrentPage} />;
+            case 'Portfolio':
+                return <Portfolio setCurrentPage={setCurrentPage} />;
+            case 'Resume':
+                return <Resume setCurrentPage={setCurrentPage} />;
+            case 'Contact':
+                return <Contact setCurrentPage={setCurrentPage} />;
+            default:
+                return null;
         }
-        if (currentPage === 'Portfolio') {
-            return <Portfolio />;
-        }
-        if (currentPage === 'Resume') {
-            return <Resume />;
-        }
-        return <Contact />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);

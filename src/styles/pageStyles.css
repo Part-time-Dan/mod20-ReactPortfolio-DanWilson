@@ -11,12 +11,16 @@
         rgba(255, 255, 255, 0) 90%);
     backdrop-filter: blur(60px);
     text-align: center;
+
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
   
   .page-title {
     font-size: 100px;
     color: #333;
     margin-top: 10px;
+
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
 
   @media (min-width: 768px) {
