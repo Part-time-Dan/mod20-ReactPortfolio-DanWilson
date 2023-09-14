@@ -4,7 +4,7 @@ import '../../styles/pageStyles.css'
 
 export default function Resume() {
 
-  const pdfUrl = 'https://drive.google.com/file/d/1Sy8buvBVqsZG9zUCPMmmCXyoyNfJ3VJl/view?usp=sharing'; 
+  const pdfUrl = 'https://drive.google.com/file/d/1Sy8buvBVqsZG9zUCPMmmCXyoyNfJ3VJl/view?usp=sharing';
 
   return (
     <div className='page-container'>
