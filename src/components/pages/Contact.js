@@ -64,7 +64,7 @@ export default function Contact({ setCurrentPage }) {
   };
 
   return (
-    <div className="page-container">
+    <div className="page-container custom-scrollbar">
       <h2 className='page-title'>Contact Me</h2>
       <div className='contact-container'>
         <form onSubmit={handleSubmit}>
