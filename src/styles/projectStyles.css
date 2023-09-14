@@ -1,41 +1,108 @@
 .project {
-    display: inline-block;
-    position: relative;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .project-image {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .project-buttons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .github-button,
-  .website-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .github-button:hover,
-  .website-button:hover {
-    background-color: #555;
-  }
-  
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  width: 270px;
+}
+
+.project-container {
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project:hover .project-image {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* Project overlay styles */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.project:hover .overlay {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+
+.project-title {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  margin: 10px;
+}
+
+.project-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.project-buttons a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-buttons a:hover {
+  color: rgb(171, 102, 218);
+}
+
+.project:hover .project-buttons {
+  opacity: 1;
+}
+
+.github-button,
+.website-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover,
+.website-button:hover {
+  background-color: #555;
+}

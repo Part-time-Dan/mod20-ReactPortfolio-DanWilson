@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navigation from './Navigation';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Resume from './pages/Resume';
@@ -29,16 +28,17 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className='App animated-background'>
-
-            <Header />
-
-            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-
-            {renderPage()}
-
+        <div>
+            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+            <div>
+                <div>
+                    {renderPage()}
+                </div>
+                <div className='App animated-background'>
+                    <div className='background-container'></div>
+                </div>
+            </div>
             <Footer />
-            
         </div>
     );
 }
