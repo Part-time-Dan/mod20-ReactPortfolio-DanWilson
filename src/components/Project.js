@@ -25,4 +25,3 @@ const Project = ({ title, imageUrl, githubLink, websiteLink }) => {
 };
 
 export default Project;
-
