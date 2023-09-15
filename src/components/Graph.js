@@ -22,6 +22,7 @@ export default function Graph() {
                 { name: 'Git + Github', progress: 60 },
                 { name: 'Heroku', progress: 40 },
                 { name: 'Microsoft Office', progress: 70 },
+                { name: 'Asana', progress: 70 },
             ],
         },
         {
