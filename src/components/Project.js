@@ -14,9 +14,11 @@ const Project = ({ title, imageUrl, githubLink, websiteLink }) => {
             <a href={githubLink} target="_blank" rel="noopener noreferrer" className="github-button">
               GitHub
             </a>
-            <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="website-button">
-              Website
-            </a>
+            {websiteLink ? (
+              <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="website-button">
+                Website
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
