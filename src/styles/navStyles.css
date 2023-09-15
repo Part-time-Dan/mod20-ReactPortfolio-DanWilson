@@ -10,6 +10,7 @@
 
 .nav-item {
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-link {
@@ -24,4 +25,18 @@
 .nav-link.active {
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
+}
+
+@media (max-width: 400px) {
+  .nav-list {
+    transform: scale(0.8); /* Adjust the scaling factor as needed */
+    transition: transform 0.3s ease;
+  }
+}
+
+@media (min-width: 401px) {
+  .nav-list {
+    transform: scale(1); /* Reset the scaling to 1 (original size) */
+    transition: transform 0.3s ease;
+  }
 }

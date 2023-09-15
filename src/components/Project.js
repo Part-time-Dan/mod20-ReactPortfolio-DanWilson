@@ -7,9 +7,13 @@ const Project = ({ title, imageUrl, githubLink, websiteLink }) => {
       <div className='project-container'>
         <img src={imageUrl} alt={title} className="project-image" />
         <div className='overlay-container'>
+       
           <div className="overlay">
-            <h3 className='project-title'>{title}</h3>
+          
           </div>
+
+          <h3 className='project-title'>{title}</h3>
+
           <div className="project-buttons">
             <a href={githubLink} target="_blank" rel="noopener noreferrer" className="github-button">
               GitHub
