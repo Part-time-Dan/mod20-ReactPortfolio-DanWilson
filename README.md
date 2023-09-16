@@ -60,8 +60,8 @@ For additional license information, please follow the link: [MIT](https://choose
 
 ## Link
 
-[Dan's Portfolio in React](https://)
+[Dan's Portfolio in React](https://part-time-dan.github.io/mod20-ReactPortfolio-DanWilson/)
 
 ## Images
 
-![Image coming soon](/assets/)
+![Image coming soon](./public/assets/deploy_screenshot.PNG)
