@@ -6,7 +6,7 @@ Build a personal portfolio webpage utilizing React tools.
 
 ## Description
 
-The goal of this project is to create a single-page portfolio featuring a header, content section and footer. The content should change without the user being directed to a new page through the use of React components. The project will be deployed on 'gh-pages'.
+The goal of this project is to create a single-page portfolio featuring a header, content section and footer. The content should change without the user being redirected to a new page through the use of React components. The project will be deployed on 'gh-pages'.
 
 Other technical criteria for this project include:
 
