@@ -10,6 +10,7 @@ export default function Contact({ setCurrentPage }) {
   });
 
   const [errors, setErrors] = useState({});
+  const [emailError, setEmailError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,6 +18,17 @@ export default function Contact({ setCurrentPage }) {
       ...formData,
       [name]: value,
     });
+
+    // validate email field and render 'invalid' string if email doesn't match regex
+    if (name === 'email') {
+      const emailPattern = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+      // .test will check the value pattern against the regex pattern
+      if (!emailPattern.test(value)) {
+        setEmailError('Invalid email format');
+      } else {
+        setEmailError('');
+      }
+    }
 
     // validate empty fields and set errors
     const newErrors = { ...errors };
@@ -91,6 +103,7 @@ export default function Contact({ setCurrentPage }) {
               onMouseOut={handleMouseOut}
             />
             {errors.email && <p className="error">{errors.email}</p>}
+            {emailError && <p className="error">{emailError}</p>}
           </div>
           <div className="form-group">
             <label htmlFor="message">Message</label>
