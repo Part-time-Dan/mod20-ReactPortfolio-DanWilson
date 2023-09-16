@@ -19,10 +19,10 @@
 }
 
 .footer-icons a {
-  margin: 0 10px; 
-  color: #ccc; 
+  margin: 0 10px;
+  color: #ccc;
   font-size: 24px;
-  text-decoration: none; 
+  text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 

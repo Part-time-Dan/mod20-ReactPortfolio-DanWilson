@@ -58,11 +58,11 @@
   margin: 10px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  transform: translate(0); /* this prevents overlay from dimming title on hover, but not sure why */
+  transform: translate(0);/* this prevents overlay from dimming title on hover, but not sure why */
 }
 
 .project:hover .project-title {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .project-buttons {

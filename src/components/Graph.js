@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/graphStyles.css';
 
-
 export default function Graph() {
     const skillsData = [
         // adjust number values to change progress bar

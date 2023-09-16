@@ -4,7 +4,7 @@ import '../styles/footerStyles.css'
 export default function Footer() {
   return (
     <div className='footer-container'>
-            <div className="footer-icons">
+      <div className="footer-icons">
         <a href="https://github.com/Part-time-Dan" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github"></i>
         </a>

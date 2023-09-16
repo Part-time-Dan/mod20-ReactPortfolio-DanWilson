@@ -7,9 +7,9 @@ const Project = ({ title, imageUrl, githubLink, websiteLink }) => {
       <div className='project-container'>
         <img src={imageUrl} alt={title} className="project-image" />
         <div className='overlay-container'>
-       
+
           <div className="overlay">
-          
+
           </div>
 
           <h3 className='project-title'>{title}</h3>
